@@ -1,0 +1,172 @@
+#include <stdio.h>  
+void main()  
+{  
+      
+    int i, j,k;  
+    for (i = 1; i <= 5; i++)   
+    {  
+        for (j = i; j <= 5; j++)  
+        {  
+            printf(" ");   
+        }  
+        for (k = 1; k <= i; k++)  
+        {  
+            printf("*"); // print the Star  
+        }  
+        printf ("\n");   
+    }  
+}  
+#include <stdio.h>  
+void main()  
+{  
+      
+    int i, j,k;  
+    for (i = 5; i >= 1; i--)   
+    {  
+        for (j = i; j <= 5; j++)  
+        {  
+            printf(" ");   
+        }  
+        for (k = 1; k <= i; k++)  
+        {  
+            printf("*"); // print the Star  
+        }  
+        printf ("\n");   
+    }  
+}  
+
+
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d\t",i);
+        }
+        printf("\n");
+    }
+}
+
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=5;j++)
+        {
+            printf("*\t");
+        }
+        printf("\n");
+    }
+}
+
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d\t",j);
+        }
+        printf("\n");
+    }
+}
+
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("*\t");
+        }
+        printf("\n");
+    }
+}
+
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=5;i>=1;i--)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("*\t");
+        }
+        printf("\n");
+    }
+}
+
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("*\t");
+        }
+        printf("\n");
+    }
+    for(i=5;i>=1;i--)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("*\t");
+        }
+        printf("\n");
+    }
+}
+
+#include<stdio.h>
+void main()
+{
+    int i,j,n=1;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d\t",n++);
+        }
+        printf("\n");
+    }
+}
+
+#include<stdio.h>
+void main()
+{
+    int i,j,n=1;
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d\t",++n);
+        }
+        printf("\n");
+    }
+}
+
+#include<stdio.h>
+void main()
+{
+    int i,j;
+    char n='A';
+    for(i=1;i<=5;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%c\t",n++);
+        }
+        printf("\n");
+    }
+}
