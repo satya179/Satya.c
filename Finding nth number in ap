@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int a1,a2,n,d,rollno;
+    printf("enter nth value:");
+    scanf("%d",&n);
+    printf("enter a1 and a2 values:\n");
+    scanf("%d\t%d",&a1,&a2);
+    d=a2-a1;
+    rollno=a1+((n-1)*d);
+    printf("my roll number is:%d",rollno);
+       return 0;
+}
