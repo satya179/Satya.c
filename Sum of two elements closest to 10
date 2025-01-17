@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main() {
+   int a[10],i,j,n,cos=0,cus,cd,n1,n2;
+   int md=__INT_MAX__;
+   printf("enter array size:");
+   scanf("%d",&n);
+   printf("enter elements of array:");
+   for(i=0;i<n;i++)
+   {
+       scanf("%d",&a[i]);
+   }
+   cos=a[0]+a[1];
+   for(i=0;i<n;i++)
+   {
+       for(j=i+1;j<n;j++)
+       {
+           cus=a[i]+a[j];
+           cd=abs(10-cus);
+           if(cd<md)
+           {
+                cos=cus;
+                md=cd;
+                n1=a[i];
+                n2=a[j];
+            }
+       }
+   }
+   printf("the sum of whose two numbers is closest to 10 are:%d and %d",n1,n2);
+  printf("\nthere sum is :%d",cos);
+
+    return 0;
+}
