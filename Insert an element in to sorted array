@@ -1,0 +1,55 @@
+#include <stdio.h>
+#define MAX_SIZE 100
+int main() {
+  int a[MAX_SIZE+1],i,j,temp,n,key,pos;
+  printf("enter array size:");
+  scanf("%d",&n);
+  if(n>MAX_SIZE)
+  { printf("the size of the array not exceed");
+      
+  }
+ printf("enter elements of array :");
+  for(i=0;i<n;i++)
+  {
+      scanf("%d",&a[i]);
+  }
+  for(i=0;i<n;i++)
+  {
+      for(j=i+1;j<n;j++)
+      {
+        if(a[i]>a[j])  
+        {
+            temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
+        }
+      }
+      
+  }
+  printf("enter an element to insert:");
+  scanf("%d",&key);
+  for(i=1;i<=n;i++)
+  {
+        if(key<a[i])
+        {
+         pos=i;
+         break;
+        }
+        else
+        {
+           pos=i+1;
+        }
+      
+  }
+  for (i = n;i>=pos;i--)
+  {
+        a[i + 1] = a[i];
+   }
+    a[pos]=key;
+  for(i=0;i<=n;i++)
+  {
+      printf("%d\t",a[i]);
+  }
+
+    return 0;
+}
